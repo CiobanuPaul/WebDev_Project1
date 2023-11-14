@@ -2,9 +2,9 @@
 <html lang=ro>
   <head>
     <meta charset="utf-8">
-    <title>Constantin Brancoveanu</title>
+    <title><%= nume %></title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="ConstantinB.css">
+    <link rel="stylesheet" href="camin.css">
   </head>
   <body>
     <header id="h">
@@ -18,10 +18,10 @@
       <div>
         <p>Camine</p>
         <div class="submeniu">
-          <a href="IoanS.html"><p>Ioan Slavici</p></a>
-          <a href="ConstantinB.html"><p>Constantin Brancoveanu</p></a>
-          <a href="Trandafiri.html"><p>Trandafiri</p></a>
-          <a href="IonC.html"><p>Ion Creangă</p></a>
+          <a href="/IoanS"><p>Ioan Slavici</p></a>
+          <a href="/ConstantinB"><p>Constantin Brancoveanu</p></a>
+          <a href="/Trandafiri"><p>Trandafiri</p></a>
+          <a href="/IonC"><p>Ion Creangă</p></a>
         </div>
       </div>
       <a href="regulament.html">
@@ -36,10 +36,10 @@
     </nav>
     
     <section id="container">
-      <h2>Caminul "Constantin Brancoveanu"</h2>
+      <h2>Caminul "<%= nume %>"</h2>
       <h4>Camin construit in anul 1998, pentru studentii Universitatii</h4>
 
-      <img id="img" src="ConstantinB.jpeg" alt="Imagine a caminului">  
+      <img id="img" src=<%= img %> alt="Imagine a caminului">  
 
       <article id="despre">
         <h3>Despre</h3>

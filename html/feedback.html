@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang=ro>
+  <head>
+    <meta charset="utf-8">
+    <title>Feedback</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="feedback.css">
+    <script src="feedback.js"></script>
+  </head>
+  <body>
+    <header id="h">
+      <h1>Caminele Universitatii Mircea Eliade</h1>
+    </header>
+
+    <nav class="meniu">
+      <a href="acasa.html">
+        <p>Acasa</p>
+      </a>
+      <div>
+        <p>Camine</p>
+        <div class="submeniu">
+          <a href="/IoanS"><p>Ioan Slavici</p></a>
+          <a href="/ConstantinB"><p>Constantin Brancoveanu</p></a>
+          <a href="/Trandafiri"><p>Trandafiri</p></a>
+          <a href="/IonC"><p>Ion Creangă</p></a>
+        </div>
+      </div>
+      <a href="regulament.html">
+        <p>Regulament</p>
+      </a>
+      <a href="calendar.html">
+        <p>Calendar</p>
+      </a>
+      <a href="contact.html">
+        <p>Contact</p>
+      </a>
+    </nav>
+    
+    <section id="container">
+      <h2>Feedback</h2>
+      <article>
+        <h4>Descrieti experienta voastre in caminele universitatii</h4>
+
+        <form id="myform">
+          <fieldset>
+          <label for="gen">Genul:</label>
+          <label>Masculin<input type="radio" name="gen" value="m"></label>
+          <label>Feminin<input type="radio" name="gen" value="f"></label>
+          </fieldset>
+          <fieldset>
+          <p>In ce interval ati fost cazat?(ex: '2020-2022')</p>
+          <input type="text" class="caseta" id="interval" pattern="[2015-2030]{-}[2016-2031]" name="text">
+          <!-- de adaugat functie de verificare -->
+          </fieldset>
+
+          <fieldset>
+          <p>In ce camin ati fost cazat?</p>
+          <select class="caseta" id="select" name="select">
+            <option  value="ioans">Ioan Slavici</option>
+            <option  value="constantinb">Constantin Brancoveanu</option>
+            <option  value="trandafiri">Trandafiri</option>
+            <option  value="ionc">Ion Creanga</option>
+          </select>
+          </fieldset>
+          <fieldset>
+          <p>Cum considerati experienta voastra de cazare?</p>
+          <input id="rangeinp" type="range" name="range" class="caseta" min="0" max="10" step="2">
+          <label id="range" for="range"></label>
+        </fieldset>
+
+          <fieldset>
+          <p>Doriti sa dati sugestii pentru o administrare mai potrivita a caminelor?</p>
+          <input id="textarea" class="caseta" type="textarea" name="sugestii">
+        </fieldset>
+
+        <fieldset>
+        <input type="submit" class="caseta" value="Submit">
+        <p id="error"></p>
+      </fieldset>
+        </form>
+      </article>
+    </section>
+
+    <footer>
+      <p>Site realizat de Ciobanu Paul</p>
+      <p>email: ciobanuioanpaul43@gmail.com</p>
+      <p>mobil: 07452434643</p>
+    </footer>
+  </body>
+</html>
